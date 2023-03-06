@@ -1,0 +1,964 @@
+  /* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  h1{
+    font-size: 70px;
+    line-height: 64px;
+    color: black;
+  }
+
+  h2{
+    font-size: 50px;
+    line-height: 54px;
+    color: black;
+  }
+
+  h4{
+    font-size: 30px;
+    color: black;
+  }
+
+  h6{
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  p{
+    font-size: 16px;
+    color: black;
+    margin: 15px 0 20px;
+  }
+
+ .section-p1{
+    padding: 40px 80px;
+  }
+
+  .section-m1{
+    margin: 40px 0;
+  }
+
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+button.white{
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: white;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  transition: 0.3s;
+}
+
+
+  body{
+    width: 100%;
+  }
+
+
+  #header{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background:black;
+    box-shadow: 0 5px 15px rgb(67, 66, 66);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+/* */
+
+#header p{
+  color: white;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 1000;
+}
+
+  #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  #navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(240, 230, 230);
+    transition: 0.4s ease;
+  }
+
+  #navbar li a:hover,
+  #navbar li a.active{
+    color: rgb(248, 236, 6);
+  }
+
+  #navbar li a.active::after,
+  #navbar li a:hover::after
+    {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: rgb(216, 211, 69);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+  
+  #hero{
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-taobao-vector-creative-technology-online-shopping-illustration-computer-finger-poster-image_131803.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+  }
+  
+#hero h4{
+  padding-bottom: 15px;
+}
+
+#hero h1{
+  color: #ffffff;
+}
+
+#hero button{
+  background-color: black;
+  color: white;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+
+}
+
+#hero button:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  
+}
+
+
+#services {
+  justify-content: center;
+  width: 100%;
+  background-color:rgb(62, 61, 61);
+  border-radius: 10px;
+  color: white;
+  padding: 6px;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: 480px;
+  margin-right: 480px;
+
+}
+
+
+#feature{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+#feature .fe-box{
+  width: 200px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgb(152, 153, 154);
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+  box-shadow: 10px 10px 54px rgba(10, 6, 98, 0.1);
+} 
+
+#feature .fe-box img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+  display: inline-block;
+  padding:12px;
+  line-height: 1;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(64, 60, 60);
+}
+
+
+#product {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color:white;
+  
+}
+
+#product h2{
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(6, 155, 184);
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  padding: 6px;
+  margin-bottom: 0px;
+  text-shadow: 0 5px black;
+  border: black;
+}
+
+#product p{
+  margin-top: 2px;
+  justify-content: center;
+  width: 100%;
+  background-color:black;
+  font-size: 7px;
+  border-radius: 0 0 50px 50px;
+}
+
+
+#product .pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 120px;
+  flex-wrap: wrap;
+  }
+
+
+#product .pro{
+  background-color: rgb(208, 238, 242);
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor:pointer;
+  box-shadow: 20px 20px 30px rgba(69, 50, 50, 0.02);
+  margin: 15px 0;
+  transition: 0.3s ease;
+}
+
+#product .pro:hover{
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06) ;
+}
+
+#product .pro img{
+  width: 100%;     /* */
+  border-radius: 15px;
+  
+}
+
+
+#product .pro .des{
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product .pro .des span{
+  color: rgb(92, 90, 90);
+  font-size: 18px;
+}
+
+#product .pro .des h5{
+  padding-top: 7px;
+  color: black;
+  font-size: 16px;
+}
+
+/* i */
+
+
+#product .pro .des h4{
+  padding-top: 7px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(122, 7, 122);
+}
+
+/* cart */
+
+
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('https://thumbs.dreamstime.com/b/vector-coffee-shop-yellow-banner-dark-background-vector-coffee-shop-yellow-horizontal-modern-banner-illustration-thin-111547116.jpg');
+  padding-bottom: 20px ;
+  padding-top: 20px;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  text-shadow:  1px 1px 1px rgb(255, 128, 0);
+  margin-bottom: 180px;
+
+}
+
+#banner h4{
+  color: white;
+  font-size: 18px ;
+  padding: 10px;
+}
+
+#banner h2{
+  color:white;
+  font-size: 40px;
+  padding: 10px;
+}
+
+#banner h2 span{
+   color: rgb(247, 7, 7);
+
+}
+
+#banner button:hover{
+  background-color: rgb(150, 109, 5);
+  color: white;
+}
+
+
+#sm-banner{
+   display: flex;
+   /* justify-content: space-between; */
+   flex-wrap: wrap;
+   }
+
+
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: linear-gradient(rgba(5, 92, 107, 0.9),rgba(3, 134, 157, 0.65),rgba(7, 119, 144, 0.38),rgba(0, 174, 255, 0)),  url('https://www.shutterstock.com/image-vector/shopping-paper-bag-yellow-empty-260nw-1704993016.jpg');
+
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 1.6;
+
+}
+
+#sm-banner .banner-box2{
+  background-image: linear-gradient(rgba(236, 195, 9, 0.9),rgba(233, 191, 5, 0.65),rgba(198, 163, 6, 0.38),rgba(63, 52, 2, 0)), url('https://media.istockphoto.com/id/841053802/photo/shopping-theme-with-shopping-cart.jpg?s=612x612&w=0&k=20&c=wMj5ujXgafkMlIrkwyFlEorwAV22FPd-XPlkFNRkUL4=');
+
+  /* background-image: url('https://media.istockphoto.com/id/841053802/photo/shopping-theme-with-shopping-cart.jpg?s=612x612&w=0&k=20&c=wMj5ujXgafkMlIrkwyFlEorwAV22FPd-XPlkFNRkUL4='); */
+  height: 46.5vh;
+}
+
+#sm-banner .banner-box h4{
+  color: rgb(16, 1, 3);
+  font-size: 20px;
+  font-weight: 300;
+
+}
+
+
+#sm-banner .banner-box h2{
+  color: white;
+  size: 20px;
+  font-weight: 800;
+}
+
+#sm-banner .banner-box button{
+  background-color: black;
+  border: none;
+  font-size: 25px;
+  
+}
+
+#sm-banner .banner-box:hover button{
+   background: white;
+   color: black;
+   columns:none;
+   border: none;
+   }
+
+#banner3 .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: linear-gradient(rgb(255, 210, 7),rgb(237, 241, 9),rgba(233, 214, 7, 0.977),rgba(235, 203, 88, 0.966)), url('https://i.pinimg.com/736x/65/ed/60/65ed6036e937c31d5be7872fbe673ce1.jpg');
+  min-width: 30%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 150px;
+  border-radius: 6px;
+  text-shadow: 0 1px 1px rgb(136, 133, 133);
+}
+
+
+#banner3 .banner-box2{
+
+  background-image: url('https://media.istockphoto.com/id/1204430681/photo/3d-render-shopping-background.jpg?s=170667a&w=0&k=20&c=arYIbV6dItcStZuhkL_txbKsMT4rMxpqsu_rXVXETHc=');
+}
+
+#banner3 .banner-box3{
+  background-image: linear-gradient(rgb(223, 183, 5),rgb(250, 242, 4),rgb(226, 208, 5),rgba(243, 191, 4, 0.966)), url('https://t3.ftcdn.net/jpg/02/64/92/28/360_F_264922838_NErJEovZiP9MTa49apqL1Vs3f88ZT8Dg.jpg');
+
+}
+
+#banner3{
+  display: flex;
+    justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 100px 0 100px;
+  border-radius: 8px;
+ 
+}
+
+#banner3 h2{
+  color: white;
+  text-decoration: underline rgb(206, 85, 85);
+  font-weight: 900;
+  font-size: 30px;
+  text-shadow: 0 2px 2px 1px black;
+} 
+
+
+#banner3 h2:hover{
+  color: white;
+}
+
+#banner3 h3{
+  color: rgb(253, 253, 253);
+  font-weight: 800;
+  font-size: 38px;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: black;
+  background-position: 20% 30%;
+  margin-bottom: 0px;
+  
+  }
+
+#newsletter h4{
+  font-size: 25px;
+  font-weight: 700 ;
+  color: white;
+}
+
+#newsletter p{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(251, 246, 246);
+}
+
+#newsletter p span{
+  color: red;
+  font-size: 18px;
+}
+
+#newsletter input{
+  height: 3.125rem;
+  padding: 0 0.20em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+  background-color: rgb(255, 196, 0);
+  columns: black;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;  
+}
+
+#newsletter .form{
+  display: flex;
+  width: 40%;
+
+
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(128, 125, 125);
+  
+
+}
+
+fotter .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo{
+  margin-bottom: 30px;
+  height: 10vh;
+}
+
+footer h4{
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+footer p{
+  font-size: 13px;
+  margin: 0 0 8px 0;
+  padding-top: 0;
+}
+
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px ;
+}
+
+footer .follow{
+  margin-top: 20px;
+}
+
+
+footer .follow a{
+   display: flex;
+}
+
+footer .follow a:hover{
+  cursor: pointer;
+  color:red;
+}
+
+footer .copyright{
+  width: 100%;
+  text-align: center;
+}
+
+#page-header{
+  background-image: linear-gradient(rgba(65, 4, 109, 0.8), rgba(64, 5, 102, 0.8)),url('https://images.ctfassets.net/hrltx12pl8hq/6jVTOtduUgVhFTP1h0MqmX/009e866bd1a3f8a965028874c58b2109/shutterstock_547563823.jpg?fit=fill&w=800&h=300');
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 40vh;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header h4{
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 2000;
+}
+
+#page-header h2{
+  color: rgb(237, 213, 92);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#pagination {
+  text-align: center;
+
+}
+
+#pagination a{
+  text-decoration: none;
+  background-color: rgb(8, 189, 189);
+  padding: 15px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+}
+
+#pro-details{
+  display: flex;
+  margin-top: 30px;
+}
+
+#pro-details .single-pro-details{
+  width: 50%;
+  padding-top: 30px;
+  text-align: left;
+}
+
+#pro-details .single-pro-details h4{
+  padding: 30px;
+}
+#pro-details .single-pro-details h2{
+  font-size: 30px;
+}
+
+#pro-details .single-pro-details select{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#pro-details .single-pro-details input{
+  width: 50px;
+  height: 47px;
+  padding-left: 10px ;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+
+#pro-details .single-pro-details input:focus{
+  outline: none;
+}
+
+#pro-details .single-pro-details button{
+  background-color: purple;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+
+
+
+
+#pro-details .single-pro-image{
+  width: 30%;
+  margin-right: 50px;
+
+}
+
+
+
+#page-header2{
+  background-image: linear-gradient(rgba(118, 16, 149, 0.8), rgba(45, 2, 69, 0.8)),url('https://img.lovepik.com/background/20211020/small/lovepik-flat-gradient-background-image_400060283.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 40vh;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header2 h4{
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 2000;
+  text-shadow: 2px 2px black;
+  text-decoration: underline rgb(188, 142, 193);
+}
+
+#page-header2 h2{
+  color: rgb(237, 213, 92);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#page-header3{
+  background-image: linear-gradient(rgba(238, 69, 69, 0.8), rgba(128, 91, 6, 0.8)),url('https://media.istockphoto.com/id/1171805592/vector/abstract-gradient-geometric-shape-background.jpg?s=612x612&w=0&k=20&c=91VKpNOxnW-HGmCAn7TEOi88HwXfOXk1v9zWP9z-Mn0=');
+  background-repeat: no-repeat;
+  font-weight: 2000;
+  font-size: 30px;
+  text-shadow: 0 4px rgb(39, 37, 37);
+  width: 100%;
+  background-size: cover;
+  height: 40vh;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header3 h4{
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 2000;
+}
+
+#page-header3 h2{
+  color: rgb(237, 213, 92);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+
+
+.aboutInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.aboutInfo img {
+  width: 50%;
+  height: auto;
+}
+
+.aboutInfo div{
+ padding: 90px;
+ width: 50%;
+}
+
+.aboutInfo div h2{
+  padding-bottom: 40px ;
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+.aboutInfo div h4{
+  font-size: 25px;
+  font-weight: 500;
+  word-spacing: 5px;
+  letter-spacing: 0.05px;
+  padding-right:40px ;
+  padding-left: 0px;
+}
+
+
+#blog{
+  width: 45%;
+  height: auto;
+  padding: 180px 0px 190px 250px;
+  }
+
+.sp div{
+  padding-left: 0px;
+  
+}  
+
+
+#aboutImg {
+  width: 100%;
+ 
+}
+
+.bg{
+  background-color:rgb(251, 230, 230);
+  margin-bottom: 0;
+}
+
+
+#quote h4{
+  background-color:rgb(255, 191, 0);
+  font-size: 30px;
+  border: 2px rgb(58, 58, 58);
+  margin-top: 0px;
+  margin-left: 450px;
+  margin-right: 450px;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+  border-radius: 3px;  
+border-left-style: solid;
+border-width: 18px;
+
+}
+
+
+#quote h4{
+  font-size: 20px;
+  color: rgb(72, 72, 72);
+  font-weight: 1000;
+}  
+
+
+#page-header4{
+  background-image: linear-gradient(rgba(238, 69, 69, 0.8), rgba(128, 91, 6, 0.8)),url('https://media.istockphoto.com/id/1171805592/vector/abstract-gradient-geometric-shape-background.jpg?s=612x612&w=0&k=20&c=91VKpNOxnW-HGmCAn7TEOi88HwXfOXk1v9zWP9z-Mn0=');
+  background-repeat: no-repeat;
+  font-weight: 2000;
+  font-size: 30px;
+  text-shadow: 0 4px rgb(39, 37, 37);
+  width: 100%;
+  background-size: cover;
+  height: 40vh;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header4 h4{
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 2000;
+}
+
+#page-header4 h2{
+  color: rgb(237, 213, 92);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+
+#contact{
+   display: flex;
+   align-items: center;
+  justify-content: space-between;
+   padding-left: 170px;
+   margin-bottom: 200px;
+   margin-top: 100px;
+}
+
+#contact .contact-info{
+  width: 40%;
+  /* justify-content: center;
+  padding-left: 200px; */
+}
+
+#contact .contact-info h3{
+  font-size: 50px;
+  padding: 20px 0;
+
+}
+#contact .contact-info h4{
+  font-size: 30px;
+
+}
+
+#contact .contact-info p{
+  font-size: 26px;
+  line-height: 1.6;
+  font-weight: 500;
+
+}
+
+
+#contact .map{
+ width: 55%;
+ height: 400px;
+}
+
+#contact .map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+
+#form-details{
+  margin-top: 40px;
+}
+
+
+
+#form-details form{
+  border: 1px solid black;
+  justify-content: center;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-details h2{
+  font-size: 40px;
+  text-shadow: 1px 1px purple;
+  padding-bottom: 30px;
+}
+
+#form-details span{
+  font-size: 30px;
+  font-weight: 600;
+
+}
+
+
+#form-details form input, 
+#form-details form textarea{
+  border-radius: 10px;
+   width: 40%;
+   padding: 12px 15px;
+   outline: none;
+   margin-bottom: 40px;
+   border: 1px solid black;
+}
+
+
+#form-details form button{
+  background-color: rgb(111, 5, 111);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 20px 40px 20px 40px;
+  font-size: 30px;
+}
+
+
+
+

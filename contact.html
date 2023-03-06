@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="maine.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />    
+</head>
+<body>
+
+<!-- logo     -->
+    <section id="header">
+        <!-- <a href=""><img src="" class="logo" alt=""></a> -->
+        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7sFnug_HIibFs8Ob8m81VhznCW5R4pujgK6-ukCGbq5kOTZ50fmCC3aISN8YmUgb_Ssc&usqp=CAU" class="logo" alt="no" width="40"></a>
+        <p>Mega Shop</p> 
+   
+        <div>
+            <ul id="navbar">
+         <li><a href="home.html">HOME</a></li>
+         <li><a href="shop.html">SHOP</a></li>
+         <li><a href="blog.html">BLOG</a></li>
+         <li><a href="about.html">ABOUT</a></li>   
+         <li><a class="active" href="contact.html">CONTACT</a></li>
+         <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="page-header4" >
+        <h4>Contact Us</h4>
+        <h2>We'd love to hear from you!</h2>
+    </section>
+
+ 
+
+<section id="contact" class="section-p1">
+   
+    <div class="contact-info">
+    <h3>Visit our marts or get in touch!</h3> <br>
+    <h4>Locations- Mega shop head office</h4>
+    <p><b>#</b> &nbsp Charlotte NC,Greenville SC and London UK. <br>
+        <b>@</b> &nbsp E-mail: megaMart@gmail.com <br>
+        <b>+</b> &nbsp Call Us: 98 XXXX XXXXn <br>
+        <b>!!</b> &nbsp Opening-Hours:  8am-10pm, Mon - Sat 
+    </p>
+    </div>
+    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.5488337780594!2d-80.79670388487489!3d35.21770538030486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541ff6613c1477%3A0x59ca831672458bd1!2sMega%20Market!5e0!3m2!1sen!2sin!4v1678101579881!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+</section>
+
+
+<section id="form-details">
+  <form onsubmit="sendEmail(); reset(); return false;">
+    <span>Leave a message! </span>
+    <h2>we'd appreciate your reviews</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="text" placeholder="E-mail">
+    <input type="text" placeholder="Contact No.">
+    <input type="text" placeholder="Subject">
+    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+    <button>Submit</button>
+  </form>
+</section>
+
+
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign up for Newsletter</h4>
+        <p>Get latest updates about our new collections <span>Special offers</span></p>
+    </div>
+
+    <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>
+
+
+<footer class="section-p1">
+
+    <div class="col">
+      <a href="#"><img src="images/logo_shop (2).png" class="logo" alt="no" width="200" height="200"></a>
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>xxxxx</p>
+    <p><strong>Phone:</strong> +91 99XXXXXXXX</p>
+    <p><strong>Hours:</strong> 8am-10pm, Mon - Sat</p>
+  <!-- follow us -->
+</div>
+
+ <div class="col follow">
+    <h4>Follow us</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Facebook</a>
+      
+</div>
+
+
+<div class="copyright">
+<p>©rights reserved</p>
+</div>
+</footer>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script>
+    function sendEmail(){
+        Email.send({
+    // SecureToken: "5bce2130-38e1-479c-b845-c4a83dc1ab86",        
+    
+    Host: "smtp.elasticemail.com",
+    Username: "megaShop@gmail.com",
+    Password: "4910BB9E2D60E7151FB221293EA8BD868E4E",
+
+    To: 'megaShop@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "new contact form enquiry",
+    Body : "Your Name: " + document.getElementById("name").value
+        + "<br> Email: "+ document.getElementById("email").value
+        + "<br>Contact No.: "+ document.getElementById("phone").value
+        + "<br> : Subject"+ document.getElementById("subject").value   
+        + "<br> Message: "+ document.getElementById("message").value    
+    
+    }).then(
+  message => alert(message)
+    );
+    } 
+</script>
+
+
+</body>
+</html>
+
+ 
