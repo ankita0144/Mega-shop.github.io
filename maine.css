@@ -2,7 +2,6 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-
   *{
     margin:0;
     padding: 0;
@@ -378,8 +377,8 @@ button.white{
   align-items: flex-start;
   background-image: linear-gradient(rgba(5, 92, 107, 0.9),rgba(3, 134, 157, 0.65),rgba(7, 119, 144, 0.38),rgba(0, 174, 255, 0)),  url('https://www.shutterstock.com/image-vector/shopping-paper-bag-yellow-empty-260nw-1704993016.jpg');
 
-  min-width: 580px;
-  height: 50vh;
+  min-width: 1100px;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -392,7 +391,8 @@ button.white{
   background-image: linear-gradient(rgba(236, 195, 9, 0.9),rgba(233, 191, 5, 0.65),rgba(198, 163, 6, 0.38),rgba(63, 52, 2, 0)), url('https://media.istockphoto.com/id/841053802/photo/shopping-theme-with-shopping-cart.jpg?s=612x612&w=0&k=20&c=wMj5ujXgafkMlIrkwyFlEorwAV22FPd-XPlkFNRkUL4=');
 
   /* background-image: url('https://media.istockphoto.com/id/841053802/photo/shopping-theme-with-shopping-cart.jpg?s=612x612&w=0&k=20&c=wMj5ujXgafkMlIrkwyFlEorwAV22FPd-XPlkFNRkUL4='); */
-  height: 46.5vh;
+  min-width: 1150px;
+  height: 56vh;
 }
 
 #sm-banner .banner-box h4{
@@ -507,7 +507,7 @@ button.white{
 }
 
 #newsletter input{
-  height: 3.125rem;
+  height:auto;
   padding: 0 0.20em;
   font-size: 14px;
   width: 100%;
@@ -535,12 +535,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: rgb(128, 125, 125);
+  background-color: rgb(203, 199, 199);
   
 
 }
 
-fotter .col{
+footer .col{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -675,6 +675,11 @@ footer .copyright{
   padding: 8px;
   border: none;
   border-radius: 8px;
+  
+  
+}
+#pro-details .single-pro-details button:hover{
+  cursor: pointer;
 }
 
 
@@ -759,15 +764,19 @@ footer .copyright{
   align-items: center;
   justify-content: space-between; 
 }
-
-.aboutInfo img {
-  width: 50%;
+ .aboutInfo img {
+  width: 40%;
   height: auto;
-}
+  margin-top: 100px;
+  margin-left: 50px;
+  border-radius: 10%; 
+  
+} 
 
 .aboutInfo div{
  padding: 90px;
  width: 50%;
+ 
 }
 
 .aboutInfo div h2{
@@ -790,7 +799,7 @@ footer .copyright{
   width: 45%;
   height: auto;
   padding: 180px 0px 190px 250px;
-  }
+  } 
 
 .sp div{
   padding-left: 0px;
@@ -957,6 +966,7 @@ border-width: 18px;
   border: none;
   padding: 20px 40px 20px 40px;
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 
