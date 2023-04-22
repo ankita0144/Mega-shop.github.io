@@ -1,5 +1,5 @@
-#                                             🎨 Mega Shop- ecommerce website 🎨
-                                               Always there for your cravings.....        
+#                                               🎨 Mega Shop- ecommerce website 🎨
+                                                    Choose the best one......        
                                                
    ❕❕[LINK FOR DEMO](https://mega-shop.ankita0144.repl.co/) ❕❕
   
